@@ -183,17 +183,19 @@ h1 {
   line-height: 1.7;
   margin: 0;
 }
+.hero h1 {
+  color: #171717 !important;
+  position: relative !important;
+  z-index: 10 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 @media (max-width: 768px) {
-  .hero {
-    min-height: 100vh;
-    padding: 150px 20px 60px;
-  }
-
   .hero h1 {
-    display: block !important;
-    visibility: visible !important;
+    color: #171717 !important;
+    position: relative !important;
+    z-index: 10 !important;
     opacity: 1 !important;
-    color: red !important;
-    font-size: 48px !important;
+    visibility: visible !important;
   }
 }
