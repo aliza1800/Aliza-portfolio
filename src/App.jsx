@@ -17,7 +17,9 @@ function App() {
       <section className="hero" id="home">
         <p className="eyebrow">MACHINE LEARNING • DATA SCIENCE</p>
 
-        <h1>TEST HEADLINE</h1>
+        <h1>I use machine learning to turn data into clear, evidence-based decisions.
+          
+        </h1>
 
         <p className="intro">
           I’m Aliza Iqbal, a data science student building practical
