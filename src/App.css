@@ -183,3 +183,27 @@ h1 {
   line-height: 1.7;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding: 110px 6% 60px;
+  }
+
+  .hero h1 {
+    color: red !important;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    font-size: 48px;
+    line-height: 1.05;
+    max-width: 100%;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .navbar {
+    padding: 20px 6%;
+  }
+}
