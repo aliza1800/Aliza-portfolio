@@ -125,8 +125,10 @@ h1 {
 .work h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(40px, 6vw, 70px);
+  line-height: 1.1;
   margin: 0 0 60px;
   font-weight: 600;
+  color: #171717;
 }
 
 .project-grid {
@@ -182,6 +184,7 @@ h1 {
 .about {
   padding: 120px 8%;
   background: #f7f5f0;
+  color: #171717;
 }
 
 .about-header {
@@ -195,6 +198,7 @@ h1 {
   line-height: 1.1;
   margin: 0;
   font-weight: 600;
+  color: #171717;
 }
 
 .about-content {
@@ -217,25 +221,15 @@ h1 {
 }
 
 /* =========================
-   HERO HEADING FIX
+   HERO HEADING
 ========================= */
 
 .hero h1 {
   color: #171717 !important;
-  position: relative !important;
-  z-index: 10 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    color: #171717 !important;
-    position: relative !important;
-    z-index: 10 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* =========================
@@ -255,6 +249,7 @@ h1 {
   margin: 0 0 24px;
   font-weight: 600;
   max-width: 850px;
+  color: #171717;
 }
 
 .future-work > p:last-child {
@@ -281,6 +276,7 @@ h1 {
   line-height: 1.1;
   margin: 0 0 24px;
   font-weight: 600;
+  color: #171717;
 }
 
 .contact-intro {
@@ -401,32 +397,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .contact {
-    padding: 90px 8%;
-  }
-
-  .contact-form {
-    max-width: 100%;
-  }
-
-  .contact-button {
-    width: 100%;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .future-work {
-    padding: 90px 8%;
-  }
-}
-/* =========================
-   MOBILE RESPONSIVE FIX
-========================= */
-
-@media (max-width: 768px) {
   .navbar {
     padding: 22px 6%;
   }
@@ -465,6 +435,10 @@ h1 {
   .future-work h2 {
     font-size: clamp(36px, 10vw, 52px);
     line-height: 1.1;
+    color: #171717 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
   }
 
   .project-grid {
@@ -498,41 +472,22 @@ h1 {
     padding: 80px 6%;
   }
 
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+
   .contact-links {
     width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .contact-links a {
     width: 100%;
     text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .work h2,
-  .about h2,
-  .contact h2 {
-    display: block !important;
-    color: #171717 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    position: relative !important;
-    z-index: 999 !important;
-  }
-}
-@media (max-width: 768px) {
-  .work h2,
-  .about h2,
-  .contact h2 {
-    display: block !important;
-    color: #171717 !important;
-    background: transparent !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    text-indent: 0 !important;
-    font-size: 42px !important;
-    line-height: 1.2 !important;
-    height: auto !important;
-    min-height: 50px !important;
-    overflow: visible !important;
   }
 }
