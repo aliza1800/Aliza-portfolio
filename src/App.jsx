@@ -123,49 +123,95 @@ function App() {
                 capstone work, and practical case studies.
             </p>
       </section>
+      
+  <section className="contact" id="contact">
+    <p className="eyebrow">GET IN TOUCH</p>
 
-      <section className="contact" id="contact">
-        <p className="eyebrow">GET IN TOUCH</p>
+    <h2>Let’s connect.</h2>
 
-        <h2>Let’s connect.</h2>
+    <p className="contact-intro">
+      I’m open to connecting about machine learning, data science,
+      practical projects, and learning opportunities.
+    </p>
 
-        <p className="contact-intro">
-          I’m open to connecting about machine learning, data science,
-          practical projects, and learning opportunities.
-        </p>
+    <form
+      className="contact-form"
+      action="https://formspree.io/f/xqpaeqrr"
+      method="POST"
+    >
+      <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+      </div>
 
-        <div className="contact-links">
-          <a
-            href="https://linkedin.com/in/aliza-iqbal-b55359351"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
+      <div className="form-group">
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+        />
+      </div>
 
-          <a
-            href="https://github.com/aliza1800"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+      <div className="form-group">
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+      </div>
 
-         <a href={`${import.meta.env.BASE_URL}Aliza-Iqbal-CV.pdf`} target="_blank" rel="noopener noreferrer">
-            Download CV
-          </a>
+      <button type="submit" className="contact-button">
+        Send Message
+      </button>
+    </form>
 
-          <a
-            href="https://calendly.com/alizaiqbal018/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book a Call
-          </a>
-        </div>
-      </section>
-    </main>
+    <div className="contact-links">
+      <a
+        href="https://linkedin.com/in/aliza-iqbal-b55359351"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/aliza1800"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href={`${import.meta.env.BASE_URL}Aliza-Iqbal-CV.pdf`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download CV
+      </a>
+
+      <a
+        href="https://calendly.com/alizaiqbal018/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Book a Call
+      </a>
+    </div>
+  </section>
+</main>
   )
 }
-
 export default App
