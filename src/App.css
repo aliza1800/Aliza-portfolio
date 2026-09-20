@@ -519,3 +519,20 @@ h1 {
     z-index: 999 !important;
   }
 }
+@media (max-width: 768px) {
+  .work h2,
+  .about h2,
+  .contact h2 {
+    display: block !important;
+    color: #171717 !important;
+    background: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-indent: 0 !important;
+    font-size: 42px !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    min-height: 50px !important;
+    overflow: visible !important;
+  }
+}
