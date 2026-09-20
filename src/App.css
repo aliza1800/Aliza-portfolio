@@ -422,3 +422,88 @@ h1 {
     padding: 90px 8%;
   }
 }
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 22px 6%;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 120px 6% 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 1.08;
+  }
+
+  .intro {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .work,
+  .about {
+    padding: 80px 6%;
+  }
+
+  .work h2,
+  .about h2,
+  .contact h2,
+  .future-work h2 {
+    font-size: clamp(36px, 10vw, 52px);
+    line-height: 1.1;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .project-card h3 {
+    font-size: 24px;
+  }
+
+  .about-header {
+    margin-bottom: 50px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .future-work {
+    padding: 80px 6%;
+  }
+
+  .contact {
+    padding: 80px 6%;
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+
+  .contact-links a {
+    width: 100%;
+    text-align: center;
+  }
+}
