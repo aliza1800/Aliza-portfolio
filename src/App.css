@@ -507,3 +507,15 @@ h1 {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .work h2,
+  .about h2,
+  .contact h2 {
+    display: block !important;
+    color: #171717 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+    z-index: 999 !important;
+  }
+}
